@@ -30,6 +30,7 @@ public class RegexTest {
     public void setUp() {
         when(regexProvider.provide(Alpha.class)).thenReturn(new Alpha());
         when(regexProvider.provide(Num.class)).thenReturn(new Num());
+        
     }
     
     @Test
@@ -59,16 +60,6 @@ public class RegexTest {
         String message = "value \"%s\" passed when it should not have!!!";
         regex = regexProvider.provide(Num.class);
         assertThat(regex.matches(value)).overridingErrorMessage(message, value).isFalse();
-    }
-    
-    @Test
-    @Parameters({
-        "123, first failure message",
-        "321, another failure message"
-    })
-    public void numTestThatWillFailForAllParamMessages(String value, String message) {
-        regex = regexProvider.provide(Num.class);
-        assertThat(regex.matches(value)).overridingErrorMessage(message).isFalse();
     }
 
 }
