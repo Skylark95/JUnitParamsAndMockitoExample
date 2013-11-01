@@ -30,7 +30,6 @@ public class RegexTest {
     public void setUp() {
         when(regexProvider.provide(Alpha.class)).thenReturn(new Alpha());
         when(regexProvider.provide(Num.class)).thenReturn(new Num());
-        
     }
     
     @Test
