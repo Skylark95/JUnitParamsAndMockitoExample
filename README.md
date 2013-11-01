@@ -8,3 +8,8 @@ JUnitParams And Mockito Example
 Eclipse Example
 ---------------
 ![](https://raw.github.com/Skylark95/JUnitParamsAndMockitoExample/master/eclipse_junit.png)
+
+See Also
+--------
+ * https://code.google.com/p/junitparams/
+ * http://docs.mockito.googlecode.com/hg/org/mockito/MockitoAnnotations.html
